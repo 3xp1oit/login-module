@@ -4,7 +4,7 @@ import time
 time1 = time.time()
 f1 = open('time.txt')
 time2 = f1.readline()
-if time1-float(time2)<10:
+if time1-time2<10:
 	f2 = open('blacklist.txt')
 	if 'quit' in f2.read():
 		exit()
