@@ -5,8 +5,7 @@ import time
 time1 = time.time()
 f1 = open('time.txt')
 time2 = float(f1.readline())
-# Compare two time stamps,if the interval is over 10s,quit,
-# else check the blacklist. 
+# Compare two time stamps,if the interval isn't over 10s,check the blacklist. 
 if time1-time2<10:
 	f2 = open('blacklist.txt')
 	if 'quit' in f2.read():
